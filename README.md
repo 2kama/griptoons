@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with this project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project built with React for the frontend, Google Cloud Firestore for database and backend & Google Cloud Functions.
+
+
 
 ## Available Scripts
 
