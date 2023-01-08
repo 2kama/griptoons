@@ -1,0 +1,133 @@
+
+
+
+.formLink {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+
+    span {
+        background: transparent;
+        color: #666;
+        cursor: pointer;
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+    }
+}
+
+
+.formError {
+    color: $white;
+    background: $primary-color;
+    font-size: 15px;
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    padding: 7px 5px;
+    text-align: center;
+    @include crossBrowser(border-radius, 3px);
+
+    svg {
+        font-size: 15px;
+        color: $white;
+        position: relative;
+        margin: 0;
+    }
+}
+
+
+
+.form-check-box {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &.forRadio {
+        border: 2px solid #ddd;
+        padding: 10px;
+        @include crossBrowser(border-radius, 3px);
+
+        &.red {
+            border: 2px solid $error-color;
+        }
+
+        &.green {
+            border: 0px;
+            background: $bright-green;
+
+            svg {
+                &.picked {
+                    color: $white;
+                }
+            }
+
+            .picker-title-2 {
+                color: $white;
+            }
+        }
+    }
+    
+
+    .picker {
+        float: left;
+        margin-right: 20px;
+        cursor: pointer;
+        
+        svg {
+            font-size: 20px;
+            @include crossBrowser(transition, all 0.5s ease-out);
+
+            &.picked {
+                color: $bright-green;
+
+            }
+
+            &.not-picked {
+                color: #777;
+                
+
+                &.pls-pick {
+                    color : $error-color;
+                    font-size: 26px;
+                    
+                }
+            }
+        }
+    }
+
+    .picker-title {
+        width: 85%;
+        float: left;
+    }
+
+    .picker-title-2 {
+        float: left;
+        font-size: 16px;
+        color: #555;
+    }
+}
+
+
+.gt-toggle {
+    width: 100%;
+    
+
+    span {
+        
+        font-size: 16px;
+    }
+
+    svg {
+       
+        cursor: pointer;
+
+        &.on {
+            color: $bright-green;
+        }
+
+        &.off {
+            color: $error-color;
+        }
+    }
+}

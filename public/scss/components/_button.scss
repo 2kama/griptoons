@@ -1,0 +1,175 @@
+
+
+.submitButtonWrap {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+.coinBuy {
+    button {
+        background: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: $white;
+        outline: none;
+        height: 50px;
+        max-width: 100%;
+        padding: 1px 50px;
+        box-shadow: 0px 8px 15px #F8C0C2;
+        @include crossBrowser(transition, all 0.5s ease 0s);
+        @include crossBrowser(border-radius, 3px);
+
+
+        &:hover {
+            @include crossBrowser(transition, all 0.5s ease 0s);
+            box-shadow: 0px 15px 20px #F8C0C2;
+            transform: translateY(-3px);
+        }
+
+        &:disabled {
+            background: #ddd;
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+button {
+    border: 0px;
+
+    &.verifyBtn {
+        background: transparent;
+        margin-left: 10px;
+        padding: 4px 8px;
+        border: 3px solid $dark-green;
+        color: $dark-green;
+        @include crossBrowser(border-radius, 3px);
+        outline: none;
+    }
+    
+
+    &.submitButton {
+        background: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: $white;
+        outline: none;
+        height: 50px;
+        max-width: 100%;
+        padding: 5px 50px;
+        box-shadow: 0px 8px 15px #F8C0C2;
+        @include crossBrowser(transition, all 0.5s ease 0s);
+        @include crossBrowser(border-radius, 3px);
+
+
+        &.negative {
+            background: $white;
+            color: $primary-color;
+        }
+
+
+        &:hover {
+            @include crossBrowser(transition, all 0.5s ease 0s);
+            box-shadow: 0px 15px 20px #F8C0C2;
+            transform: translateY(-3px);
+        }
+
+        &:disabled {
+            background: #ddd;
+            box-shadow: none;
+        }
+    }
+ 
+
+  &.load-more {
+      width: 100%;
+      height: 32px;
+      background: #ccc;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+
+
+    
+
+}
+
+
+.dropdown {
+
+    button {
+
+
+        &.dropdown-toggle {
+            text-transform: uppercase;
+            min-width: 200px;
+            background: $white;
+            color: $primary-color;
+            border: 0;
+            outline: none;
+            box-shadow: none;
+    
+            &:hover, &:focus {
+                background: $white;
+                box-shadow: none;
+            }
+    
+        }
+
+        svg {
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+        span {
+            
+        }
+
+    }
+
+
+    &.show {
+
+        button {
+
+            &.dropdown-toggle {
+                background: $white;
+                color: $primary-color;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+    
+        }
+    }
+
+    .dropdown-item {
+        height: 40px;
+        text-transform: uppercase;
+        color: #555;
+        outline: 0;
+
+        svg {
+            font-size: 25px;
+            margin-right: 20px;
+        }
+
+        &:focus {
+            background: $white;
+        }
+        
+
+    }
+
+}
+

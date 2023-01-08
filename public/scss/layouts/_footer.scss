@@ -1,0 +1,53 @@
+.footerLogo {
+    img {
+        width: 100px;
+    }
+}
+
+.footerSocials {
+    a {
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #555;
+
+        :hover {
+            color: $primary-color;
+        }
+
+        svg {
+            font-size: 20px;
+        }
+    }
+}
+
+.footerLinks {
+    a {
+        text-decoration: none;
+        color: #555;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+.cookieDiv {
+    position: fixed;
+    width: 100%;
+    background: $white;
+    bottom: 0;
+    min-height: 50px;
+    font-size: 15px;
+    z-index: 20;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    button {
+        color: $white;
+        background: $primary-color;
+    }
+
+}
+

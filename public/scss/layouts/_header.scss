@@ -1,0 +1,143 @@
+.grip-header {
+    padding: 13px 16px;
+    background: $white;
+    @include boxShadow(#aaa, -8px);
+
+    .container-fluid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    img {
+        height: 40px;
+    }
+
+    .navbar-nav {
+
+        a.nav-link, a.nav-link.active, a.nav-link:hover, .navbar-text {
+            color: $primary-color;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+
+        .dropdown-menu {
+            a {
+                background: transparent;
+                color: $primary-color;
+                
+            }
+        }
+
+        
+
+    }
+
+    &.dark {
+
+        .navbar-nav {
+
+            a.nav-link, a.nav-link.active, a.nav-link:hover, .navbar-text {
+                color: $white;
+                font-weight: bold;
+            }
+
+            .dropdown-menu {
+                background: #343a40;
+                min-width: 50px;
+
+                a {
+                    
+                    color: $white;
+
+                    &:hover {
+                        background: rgba(0, 0, 0, 0.2);
+                    }
+                    
+                }
+            }
+
+        }
+
+    }
+
+    
+}
+
+
+.modal-content {
+    background: transparent;
+    border: 0px;
+}
+
+
+.AuthSlider {
+    width: 100%;
+    overflow-x: hidden;
+    float: left;
+    
+
+    .AuthRow {
+        width: 100%;
+        float: left;
+
+
+        
+        
+    }
+}
+
+
+.AuthContent, .formBox {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background: $white;
+    @include crossBrowser(border-bottom-right-radius, 3px);
+    @include crossBrowser(border-bottom-left-radius, 3px);
+
+    h5 {
+        width: 100%;
+        text-align: center;
+        color: $primary-color;
+        margin-bottom: 25px;
+    }
+}
+
+
+.searchArea {
+    input {
+        width: 100%;
+        background: #ddd;
+        padding: 15px;
+    }
+
+    .searchLet {
+     
+
+        a {
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #555;
+            float: left;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+.noticeBanner {
+
+    color: #999;
+    
+    a {
+        text-decoration: none;
+        color: #555;
+
+        margin-right: 20px;
+    }
+}

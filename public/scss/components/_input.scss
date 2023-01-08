@@ -1,0 +1,80 @@
+input, textarea {
+    border: none;
+    color: #666;
+
+    &:hover {
+        border: none;
+        outline: none;
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+
+
+.formInput {
+    width: 100%;
+    background: $white;
+    margin-bottom: 20px;
+    @include boxShadow(#777, -8px);
+    @include crossBrowser(transition, all 0.5s ease-out);
+
+    &.headerForm {
+        margin-bottom: 0px;
+        width: 300px;
+        box-shadow: none;
+    }
+
+    input {
+        height: 50px;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+    svg {
+        font-size: 25px;
+        margin: 12px;
+        color: #777;
+        position: absolute;
+        @include crossBrowser(transition, all 0.5s ease-out);
+        
+    }
+
+    &.error {
+        @include boxShadow($error-color, -8px);
+        @include crossBrowser(transition, all 0.5s ease-out);
+
+        svg {
+            color: $error-color;
+            @include crossBrowser(transition, all 0.5s ease-out);
+        }
+    }
+
+}
+
+.fieldError {
+    color: $error-color;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 0px 12px;
+
+    svg {
+        font-size: 13px;
+        color: $error-color;
+        position: relative;
+        margin: 0;
+    }
+}
+
+

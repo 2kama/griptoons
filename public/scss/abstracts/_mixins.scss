@@ -1,0 +1,18 @@
+@mixin mQ($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+@mixin crossBrowser($tweak, $property) {
+    -webkit-#{$tweak}: $property;
+        -ms-#{$tweak}: $property;
+         -o-#{$tweak}: $property;
+            #{$tweak}: $property;
+}
+
+
+@mixin boxShadow($color, $squeeze) {
+    @include crossBrowser(box-shadow, 0 8px 2px $squeeze $color)
+}
+

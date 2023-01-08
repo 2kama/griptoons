@@ -1,0 +1,360 @@
+.sizeBody {
+    min-height: 60vh;
+}
+
+.homeComic {
+   
+
+    .homeComicNone {
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+    
+
+    .homeComicImage {
+        @extend %backgroundImage;
+        padding-top: 100%;
+
+        
+    }
+
+    .hanger {
+        width: 100%;
+        margin-top: -35%;
+        padding: 15px;
+        background-color: transparent; 
+        background-image: linear-gradient(to top, #555 , transparent);
+        
+        
+
+        .small-text {
+            font-size: 13px;
+            color: $white;
+
+           
+        }
+
+        .title-text {
+            font-size: 1.3em;
+
+            a {
+                text-decoration-line: none;
+                color: $white;
+
+                
+            }
+        }
+
+        .stat-text {
+            color: $primary-color;
+        }
+    
+    }
+
+
+    &:hover {
+
+        .hanger {
+
+            background-image: linear-gradient(to top, $primary-color , $primary-color);
+
+        .small-text {
+         
+                color: $white;
+          
+            
+        }
+
+        .title-text {
+            a {
+                color: $white;
+            }
+        }
+
+        .stat-text {
+            color: $white;
+        }
+
+        }
+        
+    }
+
+    
+}
+
+
+.bigImage {
+    @extend %backgroundImage;
+    padding-top: 40%
+}
+
+.smallImage {
+    @extend %backgroundImage;
+    padding-top: 100%;
+}
+
+.eventButtonBox {
+    font-size: 18px;
+
+    svg {
+        color: $primary-color;
+    }
+
+    button.eventButton {
+        font-size: 13px;
+        @include crossBrowser(border-radius, 3px);
+        margin-left: 10px;
+        margin-top: -4px;
+        border: 0;
+        padding: 5px;
+        min-width: 100px;
+        background: #eee;
+
+        &.btn-danger {
+            background: $primary-color;
+        }
+
+        &.btn-outline-danger {
+            background: #eee;
+
+            &:hover {
+                color: $primary-color;
+                background: #ddd;
+            }
+        }
+    }
+}
+
+
+.star {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+
+
+    svg {
+        font-size: 30px;
+        width: 5px;
+    }
+}
+
+
+
+.pages {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+
+    span {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 10px;
+
+        &.hide {
+            display: none;
+        }
+
+        &.onPage {
+            font-weight: bold;
+            color: $primary-color;
+        }
+
+        &.disable {
+            display: none;
+        }
+    }
+}
+
+
+
+.readerDiv {
+    float: left;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    @include mQ(990px) {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    @include mQ(576px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    img {
+        width: 100%;
+        float: left;
+    }
+}
+
+
+
+.commentForm {
+    width: 100%;
+    background: #ddd;
+    float: left;
+
+    .commentFoot {
+        font-size: 12px;
+        width: 100%;
+        float: left;
+        background: $body-background;
+        padding-top: 4px;
+    }
+
+    textarea {
+        width: 100%;
+        background: transparent;
+        width: 90%;
+        float: left;
+    }
+
+    button {
+        width: 10%;
+        float: left;
+        height: 100%;
+        margin-top: 30px;
+        outline: 0;
+        background: transparent;
+
+        svg {
+            font-size: 30px;
+        }
+    }
+}
+
+.commentBox {
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    float: left;
+
+    p {
+        color: #666;
+    }
+
+    .commentAction {
+        width: 100%;
+        color: #777;
+        font-size: 12px;
+
+        button {
+            background: transparent;
+            color: #777;
+            outline: 0;
+
+            svg {
+                color: $primary-color;
+            }
+
+        }
+    }
+
+    .replyArea {
+        float: left;
+        width: 100%;
+    }
+}
+
+
+.related {
+    a {
+        text-decoration: none;
+        color: #666;
+    }
+}
+
+
+
+.infoPage {
+    h2 {
+        color: $primary-color;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+
+
+.mainSliderPanel {
+
+    width: 100%;
+
+    .slick-slide {
+        opacity: 0.5;
+
+        img {
+            width: 100%;
+        }
+
+        &.slick-active {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+}
+
+
+.mainSliderPanel2 {
+
+    width: 100%;
+
+    .slick-slide {
+        opacity: 0.5;
+
+        img {
+            width: 100%;
+        }
+
+        &.slick-active {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+}
+
+.boxSlide {
+    width: 100%;
+
+    .slick-slide {
+
+        padding-left: 7px;
+        padding-right: 7px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.scrollHead {
+
+}
+
+
+.placeholder {
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 200px;
+        margin-top: 40vh;
+    }
+}

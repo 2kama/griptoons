@@ -1,0 +1,125 @@
+.gt-table {
+
+    thead {
+        border: 0;
+
+        th {
+            border: 0;
+            
+        }
+    }
+
+    
+
+    td {
+        border: 0;
+        vertical-align: middle;
+        
+    }
+
+    tr {
+        background: $white;
+        border-bottom: 6px solid $body-background;
+
+        &.episode-tr {
+            font-size: 16px;
+            color: #333;
+
+            .time {
+                float: left;
+                width: 100%;
+                font-size: 11px;
+            }
+
+            a {
+                text-decoration: none;
+                color: #333;
+                
+                svg {
+                    font-size: 25px;
+                    color: #333;
+                    text-decoration: none;
+                }
+            }
+
+            span.pointer {
+                
+                svg {
+                    font-size: 25px;
+                    color: $primary-color;
+                }
+            }
+
+
+
+            .payBtn {
+                cursor: pointer;
+            }
+
+
+            &.auth {
+
+                color: #999;
+
+                svg {
+                    color: #999;
+                }
+
+                .episodeSquare {
+                    filter: grayscale(100%);
+                    opacity: 0.7;
+                }
+
+                .time {
+                    color: $primary-color;
+                }
+
+            }
+
+
+            &.read {
+                color: #999;
+
+                a {
+                    color: #999;
+                }
+
+                svg {
+                    color: #999;
+                }
+            }
+
+            
+        }
+    }
+}
+
+
+.topicHouse {
+
+    h4 {
+        span {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    }
+
+    a {
+        text-decoration-line: none;
+        color: $primary-color
+    }
+}
+
+
+.share {
+    a {
+
+        svg {
+            font-size: 25px;
+            margin-left: 15px;
+            color: $primary-color;
+        }
+
+    }
+    
+}
