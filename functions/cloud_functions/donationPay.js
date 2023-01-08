@@ -25,7 +25,7 @@ exports.donationPay = functions.firestore
         path: `/transaction/verify/${snap.id}`,
         method: 'GET',
         headers: {
-          Authorization: 'Bearer sk_live_70d6f85d45f50903a6d56efb6359d3990fd80ffb'
+          Authorization: ''
         }
       }
 
